@@ -64,7 +64,7 @@ This is your project checklist.  Make sure to revisit it before you submit your 
 
 ### Project Submission
 
-**_DO NOT FORK THIS REPOSITORY!_** Create a **new** repository on your PERSONAL GitHub account (not GitHub Enterprise). Then, submit your project as an issue to [the project 1 gallery repository](../../../project1-gallery).
+**_DO NOT FORK THIS REPOSITORY!_** Create a **new** repository on your PERSONAL GitHub account (not GitHub Enterprise). Then, submit your project as an issue to [the project 1 gallery repository](../../../project-1-gallery).
 
 You must turn in something before presentations begin. However, you're welcome
 to continue working on it over the course of SEIR and beyond!
