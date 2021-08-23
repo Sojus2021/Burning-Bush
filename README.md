@@ -80,7 +80,7 @@ It is a common practice on development teams to have a demo day every two weeks 
 
 To prepare you for this, for project 1, you will give a demo of your project to your squad.  Each person will be given approximately 5-10 minutes to demonstrate their project, talk about some part of their code that they are particularly proud of, share their experiences working on the project, and answer questions from squad members.  
 
-You must present your project at this time, even if you did not complete the requirements.  If you do not show up for project presentations, your project will not be deemed as submitted and you will not be eligible for graduation.  
+You must present your project at this time, even if you did not complete the requirements.  If you do not show up for project presentations, your project will automatically not be deemed as submitted and you will not be eligible for graduation.  
 
 During presentations, there should be **no working on your code** while others are presenting. This is your
 chance to ask others how they tackled their project.
