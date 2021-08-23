@@ -155,7 +155,7 @@ Other developers are also more likely to want to help you if you've spent signif
 
 Take a moment to re-familiarize yourself with the [plagiarism policy](../../../course-intro/blob/master/plagiarism.md).  
 
-The code you submit for this project must be designed and originated by you. Remember to Google smaller parts of the problem, and not a broad question like "how to create tic tac toe in JavaScript." Any outside sources must be documented with inline attributions and must not constitute the majority of your project. You may not submit code from a tutorial for any project in this course. 
+The code you submit for this project must be designed and originated by you. Remember to Google smaller parts of the problem, and not a broad question like "how to create tic tac toe in JavaScript." Any outside sources must be documented with inline attributions and must not constitute the majority of your project. You may not submit code from a tutorial for any project in this course. We can easily spot plagiarized code and encourage you to ask if you are in doubt.
 
 Projects give you an opportunity to apply the skills you're learning in a practical manner.  If you're struggling with something, that's okay!  In fact, that's why you're here -- if this was easy and you could do it already, you wouldn't be here. These assignments are similar to those you can expect when applying for a job,
 either in the form of a take-home coding challenge or an in-person technical
