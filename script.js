@@ -2,8 +2,8 @@
 
 // WHAT THE PLAYERS WILL DO //
 
-// 1. Hit the 'next' button to get the game started.
-// 2. Read the question. Select their answer. Answer selection will turn the page.
+// 1. Hit the 'reset' button to get the game started.
+// 2. Read the question. Select (click) their answer. Then they will click submit, which will +1 the score and load the next question.
 // 3. Keep going till they've answered the 24th question.
 // ** What should happen if they abandon the game midway? Should it time out? **
 // 4. Players who score >= 20 will get an award - call it the 'Badge of Honor'. Those who get 24/24 will get the 'Shield of Faith'.

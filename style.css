@@ -1,0 +1,31 @@
+/* #modal {
+	background-color: ;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+#modal-textbox {
+	background-color: ;
+	height: 350px;
+	width: 550px;
+	border-radius: 2px;
+} */
+.vertical-radio-buttons div {
+	display: block;
+	padding: 0 0 5px 5px;
+	clear: both;
+}
+.vertical-radio-buttons span {
+	display: block;
+	padding-left: 20px;
+	cursor: inherit;
+}
+.vertical-radio-buttons input {
+	float: left;
+	width: 10px;
+	margin-left: -20px;
+	margin-top: 6px; 
+	padding: 0;
+}
