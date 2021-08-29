@@ -1,3 +1,4 @@
+
 trivia = [
 // [
 //     question1: “Which son was Jacob’s oldest?”,
@@ -8,7 +9,7 @@ trivia = [
 
 // ]
 {
-    question1: “Jacob's oldest son was... ”,
+    question1: "Who was Jacob's oldest son?",
     options: {
 	    a: “Simeon”,
         b: “Reuben”,
@@ -312,20 +313,20 @@ reset.addEventListener('click', init);
 
 //// --- display, load page --- ////
 
-// init()
-// function init(){
-// let qNum = 1;
-// let score = 0;
-// let position = qNum
-// render();
-// }
+init()
+function init(){
+let qNum = 1;
+let score = 0;
+let position = qNum
+render();
+}
 
-// function render(){
-//     reset.style.display = 'block';
-//     triviaQ.forEach(element, index) => {
-//         document.getElementsByClassName(index);
-    // }
-// }
+function render(){
+    reset.style.display = 'block';
+    triviaQ.forEach(element, index) => {
+        document.getElementsByClassName(index);
+    }
+}
 
 // let i = 0;
 // let length1 = triviaQ.length
