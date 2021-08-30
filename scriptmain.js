@@ -36,7 +36,7 @@ trivia = [
     question: "Which of the tribes was known for living by the sea?",
     optionA: "Asher",
     optionB: "Zebulun",
-    optionC: "Gad"
+    optionC: "Gad",
     correctAnswer: "b"
 },
 ///
@@ -155,7 +155,7 @@ trivia = [
     question: "There were two Simons. One was Peter. The other was from where?",
     optionA: "Canaan",
     optionB: "Egypt",
-    optionC: "Emmaus"
+    optionC: "Emmaus",
     correctAnswer: "a"
 },
 ///
@@ -262,31 +262,32 @@ reset.addEventListener('click', handleClick);
 // to update score (click submit)
 // to notify players about prizes (correctAnswer += 20)
 // to end game (numClicks === 24 || click reset)
-// to reset game (click reset)
 
 //// --- display, load page --- ////
+// does render function work without init?
 
-function renderQ (){
+function render (){
     let qNum = position;
-    let position = 0;
+    let position = [0];
     let score = 0;
     let numClicks = 0;
 
     question.innerHTML = "<p>"+ qNum.question +"</p>";
+    //the goal is to load the following into the box with the radio buttons//
     optionA.innerHTML = qNum.optionA;
     optionB.innerHTML = qNum.optionB;
     optionC.innerHTML = qNum.optionC;
 
 };
-/// --- next question --- ///
+/// --- proceed to next question --- ///
 
 function handleClick(event) {
-    let playerSelect = radioA || radioB || radioC 
+    let playerSelect = document.getElementsByClassName("vertical-radio-buttons");
 
-    if (submit = 1){
+    if (submit >= 1 ){
         return nextQuestion;
      } else if (reset){
-         question = 1;
+         return question[0];
      }
     };
 
@@ -305,9 +306,10 @@ function keepScore (){
 };
 
 /// --- game over --- ///
-function gameOver
-    if (numClicks === 24 || click reset); {
+function gameOver (){
+    if (numClicks === 24 || reset); {
     return gameOver; 
+}
     };
 
 // init()
@@ -325,96 +327,5 @@ function gameOver
 //     }
 // }
 
-// let i = 0;
-// let length1 = triviaQ.length
-// correctAnswer = 0;
-// score = 0;
-
-// function loadPage(index) {
-//     document.getElementById("qNum").innerHTML = qNum
-//     document.getElementById("score").innerHTML = score
-//     document.getElementById("options").innerHTML = options
-//     document.getElementById("correctAnswer").innerHTML = correctAnswer
     
-//     reset.onclick = function () {
-//         if(i > trivia.length - 1){
-//             i = 0
-//         }
-//         loadPage(i);
-//         i++;
-//     };
-// }
-// loadPage();
-// if playerSelect === correctAnswer
-//     return score + 1
-
-
-// for (let i = 0; i < trivia.length; i++){
-//     return (trivia[i]);
-// }
-// let triviaQ = document.getElementsByClassName("qContent");
-
-
-// function loadPage(qNum) {
-//     const triviaQ = trivia[i];
-//     qContent.innerText = triviaQ.position;
-
-//     options.innerHTML = " ";
-//  for (key in triviaQ.options){
-//      const radioA = "position"+i+"_options"
-//      const radioB = "position"+i+"_options"
-//      const radioC = "position"+i+"_options"
-//      const opText = triviaQ.options[key];
-//  }
-
-// };
-
-
-
-
-
     
-    // const ouput [];
-    
-    // indQuestion.forEach((position, qNum) => {
-    //     const options [];
-        
-    //     for (letter in position.options){
-    //         options.push(
-    //             `<label>
-    //             <input type="radio" name="options${qNum}" value="${letter}" > ${letter} :
-    //             ${position.options[letter]} 
-    //             </label>`
-    //             );
-    //         }
-            
-    //     })
-    // }
-    
-    // function handleClick(event){
-        
-    //     if numClicks return next question
-        
-        
-    //     if numClicks === 24
-    //     return alert "game over"
-        
-    //     if score === 20
-    //     return alert "Congratulations, you've won the Badge of Honor!"
-        
-    //     if score === 24
-    //     return alert "Congratulations, you've earned the Shield of Faith!"
-    // init()
-    
-    // function init(){
-    //     numClicks = new Array(24).fill(null)
-    //     position = 0
-    //     playerSelect = 0;
-    //     correctAnswer = 0;
-    //     score = 0;
-    //     render();
-    // }
-    // function render () {
-    //     button.style.display = 'none'
-    
-    }
