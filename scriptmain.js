@@ -9,246 +9,197 @@ trivia = [
 
 // ]
 {
-    question1: "Who was Jacob's oldest son?",
-    options: {
-	    a: “Simeon”,
-        b: “Reuben”,
-        c: “Levi”,
-    },
+    question: "Who was Jacob's oldest son?",
+    optionA: “Simeon”,
+    optionB: “Reuben”,
+    optionC: “Levi”,
     correctAnswer: "b"
 },
 ///
 {
-    question2: “Which son did Israel say would be praised by his brothers?”,
-    options: {
-        a: "Judah",
-        b: "Dan",
-        c: "Issachar",
-    },
+    question: “Which son did Israel say would be praised by his brothers?”,
+    optionA: "Judah",
+    optionB: "Dan",
+    optionC: "Issachar",
     correctAnswer: "a"
 },
 ///
 {
-    question3: "Who was Benjamin’s mother?",
-	options: {
-        a: "Naomi",
-        b: "Rachel",
-        c: "Ruth"
-    },
+    question: "Who was Benjamin’s mother?",
+	optionA: "Naomi",
+    optionB: "Rachel",
+    optionC: "Ruth",
     correctAnswer: "b"
 },
 ///
 {
-    question4: "Which of the tribes was known for living by the sea?",
-    options: {
-        a: "Asher",
-        b: "Zebulun",
-        c: "Gad"
-    },
+    question: "Which of the tribes was known for living by the sea?",
+    optionA: "Asher",
+    optionB: "Zebulun",
+    optionC: "Gad"
     correctAnswer: "b"
 },
 ///
 {
-    question5: "Moses was from which tribe?",
-    options: {
-        a: "Manasseh",
-        b: "Reuben",
-        c: "Levi"
-    },
+    question: "Moses was from which tribe?",
+    optionA: "Manasseh",
+    optionB: "Reuben",
+    optionC: "Levi",
     correctAnswer: "c"
 },
 ///
 {
-    question6: "Whose wife falsely accused Joseph of rape?",
-    options: {
-        a: "Pharaoh",
-        b: "Potiphar",
-        c: "Herod"
-    },
+    question: "Whose wife falsely accused Joseph of rape?",
+    optionA: "Pharaoh",
+    optionB: "Potiphar",
+    optionC: "Herod",
     correctAnswer: "b"
 },
 ///
 {
-    question7: "Which one of the tribes was named for struggle?",
-    options: {
-        a: "Naphtali",
-        b: "Issachar",
-        c: "Reuben"
-    },
+    question: "Which one of the tribes was named for struggle?",
+    optionA: "Naphtali",
+    optionB: "Issachar",
+    optionC: "Reuben",
     correctAnswer: "a"
 },
 ///
 {
-    question8: "Which of Abraham’s sons was held for ransom in Egypt",
-    options: {
-        a: "Asher",
-        b: "Benjamin",
-        c: "Simeon"
-    },
+    question: "Which of Abraham’s sons was held for ransom in Egypt?",
+    optionA: "Asher",
+    optionB: "Benjamin",
+    optionC: "Simeon",
     correctAnswer: "c"
 },
  ///
 {
-    question9: "Whose name means judge?",
-    options: {
-        a: "Dan",
-        b: "Judah",
-        c: "Zebulun"
-    },
+    question: "Whose name means judge?",
+    optionA: "Dan",
+    optionB: "Judah",
+    optionC: "Zebulun",
     correctAnswer: "a"
 },
 ///
 {
-    question10: "Who was the eighth son?",
-    options: {
-        a: "Benjamin",
-        b: "Levi",
-        c: "Gad"
-    },
+    question: "Who was the eighth son?",
+    optionsA: "Benjamin",
+    optionB: "Levi",
+    optionC: "Gad",
     correctAnswer: "c"
 },
 ///
 {
-    question11: "Who was Dan and Naphtali’s neighbor in Ezekiel’s dream?",
-    options: {
-        a: "Asher",
-        b: "Moses",
-        c: "Joseph"
-    },
+    question: "Who was Dan and Naphtali’s neighbor in Ezekiel’s dream?",
+    optionA: "Asher",
+    optionB: "Moses",
+    optionC: "Joseph",
     correctAnswer: "a"
 },
 ///
 {
-    question12: "The 'men who understood the times' were from which tribe?",
-    options: {
-        a: "Naphtali"
-        b: "Issachar",
-        c: "Aaron"
-    },
+    question: "The 'men who understood the times' were from which tribe?",
+    optionA: "Naphtali",
+    optionB: "Issachar",
+    optionC: "Aaron",
     correctAnswer: "b"
 },
 ///
 {
-    question13: "Whose mother in law did Jesus heal?",
-    options: {
-        a: "Peter",
-        b: "James",
-        c: "Andrew"
-    },
+    question: "Whose mother in law did Jesus heal?",
+    optionA: "Peter",
+    optionB: "James",
+    optionC: "Andrew",
     correctAnswer: "a"
 },
 ///
 {
-    question14: "How many of the Gospels were written by Levi the tax collector?",
-	options: {
-        a: "2",
-        b: "1",
-        c: "3"
-    },
+    question: "How many of the Gospels were written by Levi the tax collector?",
+	optionA: "2",
+    optionB: "1",
+    optionC: "3",
     correctAnswer: "b"
 },
 ///
 {
-    question15: "Was Andrew a fisherman?",
-    options: {
-        a: "Yes",
-        b: "No"
-    },
+    question: "Was Andrew a fisherman?",
+    optionA: "Yes",
+    optionB: "No",
     correctAnswer: "a"
 },
 ///
 {
-    question16: "There were 2 apostles named James. One’s daddy was Zebedee. The other James’ daddy was…",
-    options: {
-        a: "Jonah",
-        b: "Alphaeus",
-        c: "Theophilus"
-    },
+    question: "There were 2 apostles named James. One’s daddy was Zebedee. The other James’ daddy was…",
+    optionA: "Jonah",
+    optionB: "Alphaeus",
+    optionC: "Theophilus",
     correctAnswer: "b"
 },
 ///
 {
-    question17: "If your name is John Boanerges, what’s your brother’s name?",
-    options: {
-        a: "Thomas",
-        b: "Luke",
-        c: "James"
-    },
+    question: "If your name is John Boanerges, what’s your brother’s name?",
+    optionA: "Thomas",
+    optionB: "Luke",
+    optionC: "James",
     correctAnswer: "c"
 },
 ///
 {
-    question18: "Which apostle spoke to the Ethiopian official on the road to Gaza?",
-    options: {
-        a: "Annas",
-        b: "Cleopas",
-        c: "Philip"
-    },
+    question: "Which apostle spoke to the Ethiopian official on the road to Gaza?",
+    optionA: "Annas",
+    optionB: "Cleopas",
+    optionC: "Philip",
     correctAnswer: "c"
 },
 ///
 {
-    question19: "There were two Simons. One was Peter. The other was from where?",
-    options: {
-        a: "Canaan",
-        b: "Egypt",
-        c: "Emmaus"
-    },
+    question: "There were two Simons. One was Peter. The other was from where?",
+    optionA: "Canaan",
+    optionB: "Egypt",
+    optionC: "Emmaus"
     correctAnswer: "a"
 },
 ///
 {
-    question20: "Judas betrayed Jesus in what garden?",
-    options: {
-        a: "Eden",
-        b: "Olives",
-        c: "Gethsemane"
-    },
+    question: "Judas betrayed Jesus in what garden?",
+    optionA: "Eden",
+    optionB: "Olives",
+    optionC: "Gethsemane",
     correctAnswer: "c"
 },
 ///
 {
-    question21: "What did ‘Unbelieving Thomas’ see and touch that made him believe?",
-    options: {
-        a: "Jesus’ scars",
-        b: "Blood-stained clothes",
-        c: "Crown of thorns"
-    },
+    question: "What did ‘Unbelieving Thomas’ see and touch that made him believe?",
+    optionA: "Jesus’ scars",
+    optionB: "Blood-stained clothes",
+    optionC: "Crown of thorns",
     correctAnswer: "a"
 },
 ///
 {
-    question22: "There are at least 2 apostles most people have never heard of. One of them is …",
-    options: {
-        a: "Caiaphas",
-        b: "Bartholomew",
-        c: "Cornelius"
-    },
+    question: "There are at least 2 apostles most people have never heard of. One of them is …",
+    optionA: "Caiaphas",
+    optionB: "Bartholomew",
+    optionC: "Cornelius",
     correctAnswer: "b"
 },
 ///
 {
-    question23: "Was Thaddeus a middle name or a last name?",
-    options: {
-        a: "Last name",
-        b: "Middle name",
-        c: "Nickname"
-    },
+    question: "Was Thaddeus a middle name or a last name?",
+    optionA: "Last name",
+    optionB: "Middle name",
+    optionC: "Nickname",
     correctAnswer: "a"
 },
 ///
 {
-    question24: "Who wrote the Book of Revelation?",
-    options: {
-        a: "Mark",
-        b: "John",
-        c: "Paul"
-    },
+    question: "Who wrote the Book of Revelation?",
+    optionA: "Mark",
+    optionB: "John",
+    optionC: "Paul",
     correctAnswer: "b"
 },
 ///
 ];
-
 
 /////** GLOBAL VARIABLES *////
 
@@ -257,6 +208,7 @@ trivia = [
 // badgeOfHonor (when score === 20)
 // shieldOfFaith (when score === 24)
 
+let question
 let qNum
 let gameOver
 let badgeOfHonor
@@ -281,6 +233,7 @@ let options
 let position
 let playerSelect
 let correctAnswer
+let nextQuestion = question + 1;
 let numClicks
 let score
 
@@ -298,7 +251,7 @@ radioA.addEventListener('click', handleClick);
 radioB.addEventListener('click', handleClick);
 radioC.addEventListener('click', handleClick);
 submit.addEventListener('click', handleClick);
-reset.addEventListener('click', init);
+reset.addEventListener('click', handleClick);
 
 
 /// --- functions --- ///
@@ -313,20 +266,64 @@ reset.addEventListener('click', init);
 
 //// --- display, load page --- ////
 
-init()
-function init(){
-let qNum = 1;
-let score = 0;
-let position = qNum
-render();
-}
+function renderQ (){
+    let qNum = position;
+    let position = 0;
+    let score = 0;
+    let numClicks = 0;
 
-function render(){
-    reset.style.display = 'block';
-    triviaQ.forEach(element, index) => {
-        document.getElementsByClassName(index);
+    question.innerHTML = "<p>"+ qNum.question +"</p>";
+    optionA.innerHTML = qNum.optionA;
+    optionB.innerHTML = qNum.optionB;
+    optionC.innerHTML = qNum.optionC;
+
+};
+/// --- next question --- ///
+
+function handleClick(event) {
+    let playerSelect = radioA || radioB || radioC 
+
+    if (submit = 1){
+        return nextQuestion;
+     } else if (reset){
+         question = 1;
+     }
+    };
+
+ /// --- keeping score --- ///   
+
+function keepScore (){
+    if (qNum === correctAnswer){
+        score++;
+    } else if (score === 20){
+        print `Congratulations, you have won the ${badgeOfHonor}`;
+    } else if (score === 24){
+        print `Congratulations, you have earned the ${shieldOfFaith}`;
+    } else if (score < 20 && numClicks === 24) {
+    print `Thanks for playing`;
     }
-}
+};
+
+/// --- game over --- ///
+function gameOver
+    if (numClicks === 24 || click reset); {
+    return gameOver; 
+    };
+
+// init()
+// function init(){
+    // let qNum = 1;
+    // let score = 0;
+    // let position = qNum
+    // render();
+    // }
+
+// function render(){
+//     reset.style.display = 'block';
+//     triviaQ.forEach(element, index) => {
+//         document.getElementsByClassName(index);
+//     }
+// }
 
 // let i = 0;
 // let length1 = triviaQ.length
