@@ -1,26 +1,11 @@
 let trivia = [
-	// {
-	//     question: "Who was Jacob's oldest son?",
-	//     optionA: “Simeon”,
-	//     optionB: “Reuben”,
-	//     optionC: “Levi”,
-	//     correctAnswer: "b"
-	// },
-	// ///
-	// {
-	//     question: “Who did Israel say would be praised by his brothers?”,
-	//     optionA: "Judah",
-	//     optionB: "Dan",
-	//     optionC: "Issachar",
-	//     correctAnswer: "a"
-	// },
 	///
 	{
 		question: 'Who was Benjamin’s mother?',
 		optionA: 'Naomi',
 		optionB: 'Rachel',
 		optionC: 'Ruth',
-		correctAnswer: 'b',
+		correctAnswer: 'Rachel',
 	},
 	///
 	{
@@ -203,8 +188,7 @@ let trivia = [
 // badgeOfHonor (when score === 20)
 // shieldOfFaith (when score === 22)
 
-let qNum;
-// let gameOver
+let qNum = 0;
 let badgeOfHonor;
 let shieldOfFaith;
 
@@ -221,85 +205,63 @@ let shieldOfFaith;
 // score (number of correct answers, initially set at zero, 1 point each)
 
 let playerSelect;
-let numClicks; // clicking the submit button
+let numClicks;
 let correctAnswer;
 let nextQuestion;
 let score;
 
 /// --- cached element references --- ///
-// let quizBox = document.getElementsById('question-area');
-// let verticals = document.getElementById('vertical-radio-buttons');
-let radioA = document.getElementById('#optionA');
-let radioB = document.getElementById('#optionB');
-let radioC = document.getElementById('#optionC');
-let submit = document.querySelector('submit');
-let reset = document.querySelector('reset');
+
+const pText = document.querySelector('#question-text');
+const radioA = document.querySelector('#optionA');
+const radioB = document.querySelector('#optionB');
+const radioC = document.querySelector('#optionC');
+const reset = document.querySelector('.reset');
+const submit = document.querySelector('.submit');
+const selectors = document.querySelector('.selectors');
 
 /// --- event listeners --- ///
 
-radioA.addEventListener('click', handleClick);
-radioB.addEventListener('click', handleClick);
-radioC.addEventListener('click', handleClick);
-submit.addEventListener('click', handleClick);
-reset.addEventListener('click', init);
-
-/// --- functions --- ///
-
-// to load/display the data (array method, init function?, )
-// to submit answers (click submit)
-// to proceed to next question (click submit)
-// to update score (click submit)
-// to notify players about prizes (correctAnswer += 20)
-// to end game (numClicks === 22 || click reset)
-
-//// --- display, load page --- ////
-init();
-
-function init() {
-	nextQuestion = trivia[0];
+reset.addEventListener('click', (event) => {
+	event.preventDefault();
 	qNum = 0;
-	score = 0;
-}
+	pText.innerText = trivia[qNum].question;
+	radioA.innerText = trivia[qNum].optionA;
+	radioB.innerText = trivia[qNum].optionB;
+	radioC.innerText = trivia[qNum].optionC;
+});
 
-function render() {
-	submit.style.display = 'block';
-	reset.style.display = 'block';
-	trivia.forEach((element, index) => {
-		document.getElementById[index].innerText;
-	});
-}
-render();
-
-/// --- proceed to next question --- ///
-
-function handleClick(event) {
-	let submit = numClicks;
-	while ((numClicks += 1)) {
-		return nextQuestion;
+selectors.addEventListener('click', (event) => {
+	console.log(event.target.innerText);
+	if (event.target.innerText === trivia[qNum].correctAnswer) {
+		score++;
 	}
-	handleClick();
+	qNum++;
+	pText.innerText = trivia[qNum].question;
+	radioA.innerText = trivia[qNum].optionA;
+	radioB.innerText = trivia[qNum].optionB;
+	radioC.innerText = trivia[qNum].optionC;
+});
 
-	/// --- scoreboard/counter --- ///
-	const iframe = document.getElementById('counter');
-	const elmt = iframe.contentWindow.document.getElementByTagName('scoreboard');
-	elmt.style.display = '0';
+// /// --- keeping score --- ///
+// // to update score (click submit)
+// // to notify players about prizes (correctAnswer += 20)
+// // to end game (numClicks === 22 || click reset)
 
-	/// --- keeping score --- ///
-
-	function keepScore() {
-		if (numClicks === correctAnswer) {
-			score++;
-		} else if (score === 20) {
-			message.textContext = `Congratulations, you have won the ${badgeOfHonor}`;
-		} else if (score === 22) {
-			message.textContext = `Congratulations, you have earned the ${shieldOfFaith}`;
-		} else if (score < 20 && numClicks === 22) {
-			message.textContext = `Thanks for playing`;
-		} else if (numClicks === 22);
-		{
-			mesage.textContext = `Thanks for playing`;
-		}
+function keepScore() {
+	if (numClicks === correctAnswer) {
+		score++;
+	} else if (score === 20) {
+		message.textContext = `Congratulations, you have won the ${badgeOfHonor}`;
+	} else if (score === 22) {
+		message.textContext = `Congratulations, you have earned the ${shieldOfFaith}`;
+	} else if (score < 20 && numClicks === 22) {
+		message.textContext = `Thanks for playing`;
+	} else if (numClicks === 22);
+	{
+		mesage.textContext = `Thanks for playing`;
 	}
 }
-keepScore();
-/// --- game over --- ///
+
+// keepScore();
+/// --- game over --- //

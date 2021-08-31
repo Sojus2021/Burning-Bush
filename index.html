@@ -6,44 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burning Bush - Bible Trivia Game</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./scriptmain.js"></script>
 </head>
 <body>
     
-        <h1></h1>
-                <h2>Burning Bush - Bible Trivia Game</h2>
-                <h3>Trivia Question:</h3>
-                
-                <div class="content" id="question-area">
-                    <div id="question-text"></div>
-                    <p></p>
-                </div>
-                    
-                        <div class="vertical-radio-buttons">
-                            <fieldset>
-                                <span>
-                                <input type="radio" id="optionA" value="letter">A
-                                </span>
-                                <span>
-                                <input type="radio" id="optionB" value="letter">B
-                                </span>
-                                <span>
-                                <input type="radio" id="optionC" value="letter">C
-                                </span>
-                                
-                                <h4>Score</h4>
-                                <!-- <h5 data-target="22" class="count">0 -->
-                                    <iframe name="scoreboard" style="height:30px; width:40px;" id="counter"></iframe>
-                                </h5>
-                            </fieldset>
-                        </div>
-                        
-                        
-                        <div id="footer">
-                            <button>Reset</button>
-                <button>SUBMIT</button>
-            </div>
+    <h1></h1>
+    <h2>Burning Bush - Bible Trivia Game</h2>
+    <h3>Trivia Question:</h3>
+    
+    <div class="content" id="question-area">
+        <div id="question-text"></div>
+        <div></div>
     </div>
+    
+    <div class="vertical-radio-buttons">
+        <fieldset>
+            <div class="selectors">
+                <button id="optionA"></button>
+                <button id="optionB"></button>
+                <button id="optionC"></button>
+            </div>
+            
+            <h4>Score</h4>
+            <!-- <h5 data-target="22" class="count">0 -->
+                <iframe name="scoreboard" style="height:30px; width:40px;" id="counter"></iframe>
+            </h5>
+        </fieldset>
+    </div>
+    
+    
+    <div id="footer">
+        <button class="reset">Reset</button>
+        <button class="submit">SUBMIT</button>
+    </div>
+</div>
 
+<script src="./scriptmain.js"></script>
 </body>
 </html>
