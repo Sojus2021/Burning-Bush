@@ -9,7 +9,7 @@
     <script src="./scriptmain.js"></script>
 </head>
 <body>
-    <div>
+    
         <h1></h1>
                 <h2>Burning Bush - Bible Trivia Game</h2>
                 <h3>Trivia Question:</h3>
@@ -18,26 +18,29 @@
                     <div id="question-text"></div>
                     <p></p>
                 </div>
-
-                <div class="vertical-radio-buttons">
-                    <fieldset>
-                        <span>
-                        <input type="radio" name="options" value="letter">A
-                        </span>
-                        <span>
-                        <input type="radio" name="options" value="letter">B
-                        </span>
-                        <span>
-                        <input type="radio" name="options" value="letter">C
-                        </span>
+                    
+                        <div class="vertical-radio-buttons">
+                            <fieldset>
+                                <span>
+                                <input type="radio" id="optionA" value="letter">A
+                                </span>
+                                <span>
+                                <input type="radio" id="optionB" value="letter">B
+                                </span>
+                                <span>
+                                <input type="radio" id="optionC" value="letter">C
+                                </span>
+                                
+                                <h4>Score</h4>
+                                <!-- <h5 data-target="22" class="count">0 -->
+                                    <iframe name="scoreboard" style="height:30px; width:40px;" id="counter"></iframe>
+                                </h5>
+                            </fieldset>
+                        </div>
                         
-                            <h4>Score</h4>
-                            <iframe name="score" style="height:30px; width:40px;"></iframe>
-                    </fieldset>
-                </div>
-
-            <div id="footer">
-                <button>Reset</button>
+                        
+                        <div id="footer">
+                            <button>Reset</button>
                 <button>SUBMIT</button>
             </div>
     </div>
