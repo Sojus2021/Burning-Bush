@@ -13,7 +13,7 @@ let trivia = [
 		optionA: 'Asher',
 		optionB: 'Zebulun',
 		optionC: 'Gad',
-		correctAnswer: 'b',
+		correctAnswer: 'Zebulun',
 	},
 	///
 	{
@@ -21,7 +21,7 @@ let trivia = [
 		optionA: 'Manasseh',
 		optionB: 'Reuben',
 		optionC: 'Levi',
-		correctAnswer: 'c',
+		correctAnswer: 'Levi',
 	},
 	///
 	{
@@ -29,7 +29,7 @@ let trivia = [
 		optionA: 'Pharaoh',
 		optionB: 'Potiphar',
 		optionC: 'Herod',
-		correctAnswer: 'b',
+		correctAnswer: 'Potiphar',
 	},
 	///
 	{
@@ -37,7 +37,7 @@ let trivia = [
 		optionA: 'Naphtali',
 		optionB: 'Issachar',
 		optionC: 'Reuben',
-		correctAnswer: 'a',
+		correctAnswer: 'Naphtali',
 	},
 	///
 	{
@@ -45,7 +45,7 @@ let trivia = [
 		optionA: 'Asher',
 		optionB: 'Benjamin',
 		optionC: 'Simeon',
-		correctAnswer: 'c',
+		correctAnswer: 'Simeon',
 	},
 	///
 	{
@@ -53,7 +53,7 @@ let trivia = [
 		optionA: 'Dan',
 		optionB: 'Judah',
 		optionC: 'Zebulun',
-		correctAnswer: 'a',
+		correctAnswer: 'Dan',
 	},
 	///
 	{
@@ -61,7 +61,7 @@ let trivia = [
 		optionsA: 'Benjamin',
 		optionB: 'Levi',
 		optionC: 'Gad',
-		correctAnswer: 'c',
+		correctAnswer: 'Gad',
 	},
 	///
 	{
@@ -69,7 +69,7 @@ let trivia = [
 		optionA: 'Asher',
 		optionB: 'Moses',
 		optionC: 'Joseph',
-		correctAnswer: 'a',
+		correctAnswer: 'Asher',
 	},
 	///
 	{
@@ -77,7 +77,7 @@ let trivia = [
 		optionA: 'Naphtali',
 		optionB: 'Issachar',
 		optionC: 'Aaron',
-		correctAnswer: 'b',
+		correctAnswer: 'Issachar',
 	},
 	///
 	{
@@ -85,7 +85,7 @@ let trivia = [
 		optionA: 'Peter',
 		optionB: 'James',
 		optionC: 'Andrew',
-		correctAnswer: 'a',
+		correctAnswer: 'Peter',
 	},
 	///
 	{
@@ -93,14 +93,14 @@ let trivia = [
 		optionA: '2',
 		optionB: '1',
 		optionC: '3',
-		correctAnswer: 'b',
+		correctAnswer: '1',
 	},
 	///
 	{
 		question: 'Was Andrew a fisherman?',
 		optionA: 'Yes',
 		optionB: 'No',
-		correctAnswer: 'a',
+		correctAnswer: 'Yes',
 	},
 	///
 	{
@@ -109,7 +109,7 @@ let trivia = [
 		optionA: 'Jonah',
 		optionB: 'Alphaeus',
 		optionC: 'Theophilus',
-		correctAnswer: 'b',
+		correctAnswer: 'Alphaeus',
 	},
 	///
 	{
@@ -117,7 +117,7 @@ let trivia = [
 		optionA: 'Thomas',
 		optionB: 'Luke',
 		optionC: 'James',
-		correctAnswer: 'c',
+		correctAnswer: 'James',
 	},
 	///
 	{
@@ -126,15 +126,16 @@ let trivia = [
 		optionA: 'Annas',
 		optionB: 'Cleopas',
 		optionC: 'Philip',
-		correctAnswer: 'c',
+		correctAnswer: 'Philip',
 	},
 	///
 	{
-		question: 'There were two Simons. One was Peter. The other was from where?',
+		question:
+			'Jesus had two apostles named Simon. One was Peter. The other was from where?',
 		optionA: 'Canaan',
 		optionB: 'Egypt',
 		optionC: 'Emmaus',
-		correctAnswer: 'a',
+		correctAnswer: 'Canaan',
 	},
 	///
 	{
@@ -142,16 +143,16 @@ let trivia = [
 		optionA: 'Eden',
 		optionB: 'Olives',
 		optionC: 'Gethsemane',
-		correctAnswer: 'c',
+		correctAnswer: 'Gethsemane',
 	},
 	///
 	{
 		question:
 			'What did ‘Unbelieving Thomas’ see and touch that made him believe?',
-		optionA: 'Jesus’ scars',
+		optionA: 'Scars',
 		optionB: 'Blood-stained clothes',
 		optionC: 'Crown of thorns',
-		correctAnswer: 'a',
+		correctAnswer: 'Scars',
 	},
 	///
 	{
@@ -160,7 +161,7 @@ let trivia = [
 		optionA: 'Caiaphas',
 		optionB: 'Bartholomew',
 		optionC: 'Cornelius',
-		correctAnswer: 'b',
+		correctAnswer: 'Bartholomew',
 	},
 	///
 	{
@@ -168,7 +169,7 @@ let trivia = [
 		optionA: 'Last name',
 		optionB: 'Middle name',
 		optionC: 'Nickname',
-		correctAnswer: 'a',
+		correctAnswer: 'Last name',
 	},
 	///
 	{
@@ -176,7 +177,7 @@ let trivia = [
 		optionA: 'Mark',
 		optionB: 'John',
 		optionC: 'Paul',
-		correctAnswer: 'b',
+		correctAnswer: 'John',
 	},
 	///
 ];
@@ -204,11 +205,10 @@ let shieldOfFaith;
 // numClicks (total number of selections player has made)
 // score (number of correct answers, initially set at zero, 1 point each)
 
-let playerSelect;
 let numClicks;
-let correctAnswer;
+let score = 0;
+let correctAnswer = (score += 0);
 let nextQuestion;
-let score;
 
 /// --- cached element references --- ///
 
@@ -219,6 +219,7 @@ const radioC = document.querySelector('#optionC');
 const reset = document.querySelector('.reset');
 const submit = document.querySelector('.submit');
 const selectors = document.querySelector('.selectors');
+const h5 = document.querySelector('h5');
 
 /// --- event listeners --- ///
 
@@ -234,7 +235,15 @@ reset.addEventListener('click', (event) => {
 selectors.addEventListener('click', (event) => {
 	console.log(event.target.innerText);
 	if (event.target.innerText === trivia[qNum].correctAnswer) {
-		score++;
+		
+        score++;
+
+		console.log(score);
+		console.log(h5);
+
+		// set h5 = number of correctAnswers
+
+		h5.innerText = score;
 	}
 	qNum++;
 	pText.innerText = trivia[qNum].question;
@@ -248,10 +257,11 @@ selectors.addEventListener('click', (event) => {
 // // to notify players about prizes (correctAnswer += 20)
 // // to end game (numClicks === 22 || click reset)
 
+numClicks = qNum >= 1;
+
 function keepScore() {
-	if (numClicks === correctAnswer) {
-		score++;
-	} else if (score === 20) {
+	
+     if (score === 20) {
 		message.textContext = `Congratulations, you have won the ${badgeOfHonor}`;
 	} else if (score === 22) {
 		message.textContext = `Congratulations, you have earned the ${shieldOfFaith}`;
@@ -262,6 +272,3 @@ function keepScore() {
 		mesage.textContext = `Thanks for playing`;
 	}
 }
-
-// keepScore();
-/// --- game over --- //
