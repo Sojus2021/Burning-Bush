@@ -1,18 +1,25 @@
+body {
+	color: darkblue;
+	background-color: lemonchiffon;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+}
 
-.vertical-radio-buttons div {
-	display: block;
-	padding: 0 0 5px 5px;
-	clear: both;
+#question-area {
+	color: darkblue;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
 }
-.vertical-radio-buttons span {
-	display: block;
-	padding-left: 20px;
-	cursor: inherit;
+
+.quizBox {
+	color: darkblue;
+	font-size: 20px;
 }
-.vertical-radio-buttons input {
-	float: left;
-	width: 10px;
-	margin-left: -20px;
-	margin-top: 6px; 
-	padding: 0;
+
+.reset {
+	background-color: grey;
+	padding: 8px 10px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }

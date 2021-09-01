@@ -41,7 +41,7 @@ let trivia = [
 	},
 	///
 	{
-		question: 'Which of Abraham’s sons was held for ransom in Egypt?',
+		question: 'Which of Jacob’s sons was held for ransom in Egypt?',
 		optionA: 'Asher',
 		optionB: 'Benjamin',
 		optionC: 'Simeon',
@@ -58,7 +58,7 @@ let trivia = [
 	///
 	{
 		question: 'Who was the eighth son?',
-		optionsA: 'Benjamin',
+		optionA: 'Benjamin',
 		optionB: 'Levi',
 		optionC: 'Gad',
 		correctAnswer: 'Gad',
@@ -100,6 +100,7 @@ let trivia = [
 		question: 'Was Andrew a fisherman?',
 		optionA: 'Yes',
 		optionB: 'No',
+		optionC: 'Maybe',
 		correctAnswer: 'Yes',
 	},
 	///
@@ -190,8 +191,6 @@ let trivia = [
 // shieldOfFaith (when score === 22)
 
 let qNum = 0;
-let badgeOfHonor;
-let shieldOfFaith;
 
 /// ** STATE VARIABLES *///
 
@@ -205,7 +204,6 @@ let shieldOfFaith;
 // numClicks (total number of selections player has made)
 // score (number of correct answers, initially set at zero, 1 point each)
 
-let numClicks;
 let score = 0;
 let correctAnswer = (score += 0);
 let nextQuestion;
@@ -220,6 +218,7 @@ const reset = document.querySelector('.reset');
 const submit = document.querySelector('.submit');
 const selectors = document.querySelector('.selectors');
 const h5 = document.querySelector('h5');
+const p = document.querySelector('p');
 
 /// --- event listeners --- ///
 
@@ -235,13 +234,7 @@ reset.addEventListener('click', (event) => {
 selectors.addEventListener('click', (event) => {
 	console.log(event.target.innerText);
 	if (event.target.innerText === trivia[qNum].correctAnswer) {
-		
-        score++;
-
-		console.log(score);
-		console.log(h5);
-
-		// set h5 = number of correctAnswers
+		score++;
 
 		h5.innerText = score;
 	}
@@ -252,23 +245,18 @@ selectors.addEventListener('click', (event) => {
 	radioC.innerText = trivia[qNum].optionC;
 });
 
-// /// --- keeping score --- ///
-// // to update score (click submit)
-// // to notify players about prizes (correctAnswer += 20)
-// // to end game (numClicks === 22 || click reset)
+// /// --- end game --- ///
 
-numClicks = qNum >= 1;
+// // to notify players about prizes
+// // to end game and start next round
 
-function keepScore() {
-	
-     if (score === 20) {
-		message.textContext = `Congratulations, you have won the ${badgeOfHonor}`;
+function endGame(qNum) {
+	if (score === 20) {
+		message.textContext = `Congratulations, you have won the Badge of Honor`;
 	} else if (score === 22) {
-		message.textContext = `Congratulations, you have earned the ${shieldOfFaith}`;
-	} else if (score < 20 && numClicks === 22) {
+		message.textContext = `Congratulations, you have earned the Shield of Faith`;
+	} else if (score < 20 && qNum === 22) {
 		message.textContext = `Thanks for playing`;
-	} else if (numClicks === 22);
-	{
-		mesage.textContext = `Thanks for playing`;
-	}
+	} return qNum = trivia[0];
 }
+endGame();
